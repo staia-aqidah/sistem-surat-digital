@@ -1,0 +1,296 @@
+/*
+ * style.css — Kampus Surat Digital
+ * Style untuk form pengajuan surat di frontend WordPress
+ */
+
+/* ============================================
+   WRAPPER UTAMA
+============================================ */
+.ks-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #212121;
+}
+
+/* ============================================
+   SECTION CARD
+============================================ */
+.ks-section {
+    background: #fff;
+    border: 1px solid #ffff4ca8;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.ks-section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #019733;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ks-section-title em {
+    color: #555;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.ks-step-num {
+    background: #FFFF4C;
+    color: #019733;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   GRID PILIH SURAT
+============================================ */
+.ks-category-group {
+    margin-bottom: 20px;
+}
+
+.ks-cat-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: #888;
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.ks-letter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.ks-letter-card {
+    display: block;
+    padding: 14px 16px;
+    background: #ffff4ca8;
+    border: 2px solid #019733c8;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .15s, background .15s, transform .1s;
+    cursor: pointer;
+}
+
+.ks-letter-card:hover {
+    border-color: #019733;
+    background: #ffff4ca8;
+    transform: translateY(-1px);
+    text-decoration: none;
+    color: inherit;
+}
+
+.ks-letter-card.ks-card-active {
+    border-color: #019733;
+    background: #FFFF4C;
+    box-shadow: 0 0 0 3px rgba(26,35,126,.12);
+}
+
+.ks-letter-card strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #019733;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.ks-letter-card .ks-card-desc {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.ks-empty {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ============================================
+   FORM ISIAN
+============================================ */
+.ks-petunjuk {
+    background: #019733;
+    border-left: 4px solid #FFFF4C;
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #FFFF4C;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ks-form {
+    display: grid;
+    gap: 18px;
+}
+
+.ks-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ks-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.ks-required {
+    color: #c62828;
+    margin-left: 2px;
+}
+
+.ks-field input[type="text"],
+.ks-field input[type="number"],
+.ks-field input[type="email"],
+.ks-field input[type="tel"],
+.ks-field input[type="date"],
+.ks-field select,
+.ks-field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #212121;
+    background: #fff;
+    transition: border-color .15s, box-shadow .15s;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.ks-field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.ks-field input:focus,
+.ks-field select:focus,
+.ks-field textarea:focus {
+    border-color: #3949ab;
+    box-shadow: 0 0 0 3px rgba(57,73,171,.15);
+}
+
+.ks-field textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.ks-help-text {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* ============================================
+   FOOTER FORM & TOMBOL SUBMIT
+============================================ */
+.ks-form-footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 4px;
+}
+
+.ks-disclaimer {
+    font-size: 13px;
+    color: #777;
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+
+.ks-btn-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 13px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .3px;
+    transition: background .15s, transform .1s;
+}
+
+.ks-btn-submit:hover {
+    background: #283593;
+    transform: translateY(-1px);
+}
+
+.ks-btn-submit:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media (max-width: 600px) {
+    .ks-section {
+        padding: 20px 18px;
+    }
+    .ks-letter-grid {
+        grid-template-columns: 1fr;
+    }
+    .ks-btn-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+/* Paksa date dan time picker tampil sebagai widget native browser */
+.ks-form input[type="date"],
+.ks-form input[type="time"] {
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    cursor: pointer;
+}
+
+/* Pastikan ikon kalender/jam tidak tersembunyi */
+.ks-form input[type="date"]::-webkit-calendar-picker-indicator,
+.ks-form input[type="time"]::-webkit-calendar-picker-indicator {
+    display: block !important;
+    opacity: 1 !important;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.ks-form input[type="date"],
+.ks-form input[type="time"] {
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    background-color: #fff !important;
+    padding-right: 8px !important;
+    min-width: 160px;
+}
