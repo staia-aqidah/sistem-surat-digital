@@ -109,6 +109,13 @@ return [
             'nuptk'   => '__________________',
             'jabatan' => 'Kepala Lembaga Penelitian & Publikasi (LPP)',
         ],
+
+        // --- Kepala PERPUSTAKAAN ---
+        'kepala_perpustakaan' => [
+            'nama'    => 'Dr. Pipin Yosepin, M.Sos',
+            'nuptk'   => '8452749650230092',
+            'jabatan' => 'Kepala Perpustakaan',
+        ],
     ],
 
     // -------------------------------------------------------
