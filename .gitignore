@@ -1,0 +1,8 @@
+# WordPress
+/wp-admin/
+/wp-includes/
+/wp-content/
+
+# Logs
+logs/
+*.log
