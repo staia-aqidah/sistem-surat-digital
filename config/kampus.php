@@ -46,13 +46,13 @@ return [
             'nama'    => 'Dr. Joko Nugroho, S.T., M.M',
             'nuptk'   => '7250752653130093',
             'jabatan' => 'Dekan Fakultas Tarbiyah',
-            'ttd_file'=> 'ttd_joko.png'
+            'ttd_file'=> 'ttd_joko.png',
         ],
         'dekan_dakwah' => [
             'nama'    => 'Sugiyono, S.Sos., M.IP',
             'nuptk'   => '0261762663130243',
             'jabatan' => 'Dekan Fakultas Dakwah dan Syariah',
-            'ttd_file'=> 'ttd_sugiyono.png'
+            'ttd_file'=> 'ttd_sugiyono.png',
         ],
 
         // --- Kaprodi S1 Tarbiyah ---
@@ -60,7 +60,7 @@ return [
             'nama'    => 'Dr. Komarudin, M.A',
             'nuptk'   => '__________________',
             'jabatan' => 'Ketua Program Studi PAI (S1)',
-            'ttd_file'=> 'ttd_komar.png'
+            'ttd_file'=> 'ttd_komar.png',
         ],
         'kaprodi_pgmi' => [
             'nama'    => '______________________',
@@ -112,11 +112,11 @@ return [
         ],
 
         // --- Kepala LPPM ---
-        kepala_lppm' => [
+        'kepala_lppm' => [
             'nama'    => 'Moh. Amir Choiri, S.Sos, M.A',
             'nuptk'   => '9047750651130193',
             'jabatan' => 'Kepala Lembaga Pusat Pengabdian Masyarakat (LPPM)',
-            'ttd_file'=> 'ttd_amir.png'
+            'ttd_file'=> 'ttd_amir.png',
         ],
 
         // --- Kepala PERPUSTAKAAN ---
@@ -124,7 +124,7 @@ return [
             'nama'    => 'Dr. Pipin Yosepin, M.Sos., CWC',
             'nuptk'   => '8452749650230092',
             'jabatan' => 'Kepala Perpustakaan',
-            'ttd_file'=> 'ttd_pipin.png'
+            'ttd_file'=> 'ttd_pipin.png',
         ],
     ],
 
