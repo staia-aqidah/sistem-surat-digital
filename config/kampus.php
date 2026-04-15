@@ -57,9 +57,10 @@ return [
 
         // --- Kaprodi S1 Tarbiyah ---
         'kaprodi_pai_s1' => [
-            'nama'    => '______________________',
+            'nama'    => 'Dr. Komarudin, M.A',
             'nuptk'   => '__________________',
             'jabatan' => 'Ketua Program Studi PAI (S1)',
+            'ttd_file'=> 'ttd_komar.png'
         ],
         'kaprodi_pgmi' => [
             'nama'    => '______________________',
@@ -110,11 +111,20 @@ return [
             'jabatan' => 'Kepala Lembaga Penelitian & Publikasi (LPP)',
         ],
 
+        // --- Kepala LPPM ---
+        kepala_lppm' => [
+            'nama'    => 'Moh. Amir Choiri, S.Sos, M.A',
+            'nuptk'   => '9047750651130193',
+            'jabatan' => 'Kepala Lembaga Pusat Pengabdian Masyarakat (LPPM)',
+            'ttd_file'=> 'ttd_amir.png'
+        ],
+
         // --- Kepala PERPUSTAKAAN ---
         'kepala_perpustakaan' => [
-            'nama'    => 'Dr. Pipin Yosepin, M.Sos',
+            'nama'    => 'Dr. Pipin Yosepin, M.Sos., CWC',
             'nuptk'   => '8452749650230092',
             'jabatan' => 'Kepala Perpustakaan',
+            'ttd_file'=> 'ttd_pipin.png'
         ],
     ],
 

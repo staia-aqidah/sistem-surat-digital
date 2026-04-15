@@ -1,11 +1,11 @@
 <?php
 $f = include KS_PATH . 'config/fields-shared.php';
 return [
-    'name'       => 'Surat Tugas Dosen (LPP)',
-    'nomor_kode' => 'IAI-AA.LPP/ST',
+    'name'       => 'Surat Tugas Dosen (LPPM)',
+    'nomor_kode' => 'IAI-AA.LPPM/ST',
     'category'   => 'dosen',
-    'info'       => 'Surat tugas dosen terkait untuk Penelitian & Publikasi, ditandatangani Kepala LPP.',
-    'petunjuk'   => 'Penandatangan default adalah Kepala LPP. Pilih pejabat lain jika diperlukan.',
+    'info'       => 'Surat tugas dosen terkait untuk Pengabdian Masyarakat, ditandatangani Kepala LPPM.',
+    'petunjuk'   => 'Penandatangan default adalah Kepala LPPM. Pilih pejabat lain jika diperlukan.',
     'fields'     => [
         // Data dosen
         $f['nama_dosen'],
@@ -20,17 +20,19 @@ return [
             'type'        => 'select',
             'required'    => true,
             'options'     => [
-                'penelitian'        => 'Penelitian',
-                'Publikasi'         => 'Publikasi Jurnal',
+                'mengajar'          => 'Mengajar / Pengajaran',
+                'seminar'           => 'Seminar / Konferensi',
+                'pengabdian'        => 'Pengabdian kepada Masyarakat',
+                'pelatihan'         => 'Pelatihan / Workshop',
                 'lainnya'           => 'Lainnya',
             ],
         ],
         [
             'name'        => 'nama_kegiatan',
-            'label'       => 'Nama Kegiatan',
+            'label'       => 'Nama Kegiatan / Mata Kuliah',
             'type'        => 'text',
             'required'    => true,
-            'placeholder' => 'Contoh: Penelitian Metode Pembelajaran Aktif 2026',
+            'placeholder' => 'Contoh: Pelatihan Metode Pembelajaran Aktif 2026',
         ],
         [
             'name'        => 'tempat',
@@ -68,9 +70,9 @@ return [
             'label'    => 'Penandatangan Surat',
             'type'     => 'select',
             'required' => true,
-            'help'     => 'Default: Kepala LPP. Pilih pejabat lain jika surat perlu ditandatangani lebih tinggi.',
+            'help'     => 'Default: Kepala LPPM. Pilih pejabat lain jika surat perlu ditandatangani lebih tinggi.',
             'options'  => [
-                'kepala_lpp' => 'Kepala LPP — Muh. Bukhari, S.Pd, M.Si (Default)',
+                'kepala_lppm' => 'Kepala LPPM — Moh. Amir Choiri, S.Sos, M.A (Default)',
                 'rektor'     => 'Rektor — Dr. TGH. Muslihan Habib, SS, MA',
                 'warek1'     => 'Wakil — Dr. Ilyas Ichsani, M.Hum',
             ],
