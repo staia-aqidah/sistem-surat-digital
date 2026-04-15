@@ -9,13 +9,13 @@ $periode     = ($data['tanggal_mulai'] === $data['tanggal_selesai'])
     : $tgl_mulai . ' s.d. ' . $tgl_selesai;
 
 // ── Tentukan penandatangan ──────────────────────────────────────
-// Ambil pilihan dari form, fallback ke kepala_lpp jika tidak ada
-$ttd_key  = $data['penandatangan'] ?? 'kepala_lpp';
+// Ambil pilihan dari form, fallback ke kepala_lppm jika tidak ada
+$ttd_key  = $data['penandatangan'] ?? 'kepala_lppm';
 
 // Whitelist key yang diizinkan — keamanan agar tidak bisa dimanipulasi
-$allowed  = ['kepala_lpp', 'rektor', 'warek1', 'warek2'];
+$allowed  = ['kepala_lppm', 'rektor', 'warek1', 'warek2'];
 if (!in_array($ttd_key, $allowed, true)) {
-    $ttd_key = 'kepala_lpp';
+    $ttd_key = 'kepala_lppm';
 }
 
 $pejabat  = ks_pejabat($ttd_key);
@@ -30,7 +30,6 @@ if ($ttd_key === 'warek1' || $ttd_key === 'warek2') {
 $label_tugas = [
     'mengajar'   => 'melaksanakan tugas mengajar / pengajaran',
     'seminar'    => 'mengikuti seminar / konferensi',
-    'penelitian' => 'melaksanakan kegiatan penelitian',
     'pengabdian' => 'melaksanakan kegiatan pengabdian kepada masyarakat',
     'rapat'      => 'menghadiri rapat / pertemuan resmi',
     'pelatihan'  => 'mengikuti pelatihan / workshop',
